@@ -1,0 +1,30 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: black;
+}
+.blink{
+    animation: blink 0.5s linear infinite;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: darkcyan;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 40px;
+}
+@keyframes blink{
+    0%{
+        opacity: 1;
+    }
+    60%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
