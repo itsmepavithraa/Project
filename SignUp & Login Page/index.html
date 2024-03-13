@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Login</h1>
+        <form>
+            <input type="text" placeholder="Username" id="username">
+            <input type="password" placeholder="Password" id="password">
+            <div class="recover">
+                <a href="#">Forget Password?</a>
+            </div>
+        <button type="submit" onclick="captureAndDisplay()" >Login</button>
+    </form>
+        <div class="member">
+            Not a Member? <a href="./signup.html">Register Now</a>
+        </div>
+<script>
+         function captureAndDisplay() {
+         var username = document.getElementById('username').value;
+         var password = document.getElementById('password').value;
+    alert('Username: ' + username + '\nPassword: ' + password);
+ }
+</script>
+</body>
+</html>
